@@ -11,7 +11,6 @@ namespace EmpMicroserviceDemo.Model
     public class Employee
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("EmployeeId")]
         public int EmployeeId { get; set; }
 
