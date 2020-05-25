@@ -11,7 +11,7 @@ namespace EmpMicroserviceDemo.Model
         public DbSet<Employee> Employee { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=tcp:employeeinfo12.database.windows.net,1433;Initial Catalog=EmployeeDB;Persist Security Info=False;User ID=aa49461;Password=kQrt8pS6#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer(@"Server=tcp:employeedemo.database.windows.net,1433;Initial Catalog=Employee;Persist Security Info=False;User ID=rajat;Password=raj.1128;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }
