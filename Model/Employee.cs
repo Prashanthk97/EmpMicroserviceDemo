@@ -12,6 +12,7 @@ namespace EmpMicroserviceDemo.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("EmployeeId")]
         public int EmployeeId { get; set; }
 
         [Column("FirstName")]
